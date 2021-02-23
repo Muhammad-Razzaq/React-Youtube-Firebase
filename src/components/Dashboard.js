@@ -6,7 +6,7 @@ import { Link, useHistory } from 'react-router-dom';
 export default function Dashboard() {
 
     const [error, setError] = useState();
-    const {currentUser, logout} = useAuth();
+    const { currentUser, logout } = useAuth();
     const history = useHistory();
 
     async function handleLogout() {
