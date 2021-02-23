@@ -21,6 +21,7 @@
 - First create a file ".env.local" on your root directory
 - Write the following code in this file
 ------------------------------------------------------------------------------------
+(
 REACT_APP_FIREBASE_API_KEY = <YourFirebaseSnippet-ApiKey>
 REACT_APP_FIREBASE_AUTH_DOMAIN = <YourFirebaseSnippet-AuthDomain>
 REACT_APP_FIREBASE_DATABASE_URL = <YourFirebaseSnippet-DatabaseURL>
@@ -28,6 +29,7 @@ REACT_APP_FIREBASE_PROJECT_ID = <YourFirebaseSnippet-ProjectId>
 REACT_APP_FIREBASE_STORAGE_BUCKET = <YourFirebaseSnippet-StorageBucket>
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID = <YourFirebaseSnippet-MessagingSenderId>
 REACT_APP_FIREBASE_APP_ID = <YourFirebaseSnippet-AppId>
+)
 ------------------------------------------------------------------------------------
 
 # Step 5 

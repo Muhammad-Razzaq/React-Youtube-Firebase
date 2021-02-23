@@ -24,8 +24,16 @@ export function AuthProvider({ children }) {
         return auth.signOut();
     }
 
-    function resetPassword(email){
+    function resetPassword(email) {
         return auth.sendPasswordResetEmail(email);
+    }
+
+    function updateEmali(email) {
+        return currentUser.updateEmali(email)
+    }
+
+    function updatePassword(password) {
+        return currentUser.updatePassword(password)
     }
 
     useEffect(() => {
@@ -41,7 +49,9 @@ export function AuthProvider({ children }) {
         login,
         signup,
         logout,
-        resetPassword
+        resetPassword,
+        updateEmali,
+        updatePassword
     }
 
     return (
