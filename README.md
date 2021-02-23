@@ -1,27 +1,26 @@
 # See This 
 [https://www.youtube.com/watch?v=PKwu15ldZ7k&feature=youtu.be]
 
-## Do This
-# Step 1
+## Follow the following instructions:
+### Step 1
 - In firebase create a project "Auth-Development" and disabled googla anaylytics
 - Go to Authentication => Get Started => click "Sign-in method" => Enabled (Email/Password)
 
-# Setp 2
+### Setp 2
 - Create another project on firebase "Auth-Production" and disabled google analytics
 - Go to Authentication => Get Started => click "Sign-in method" => Enabled (Email/Password)
 - Scroll down => Go to "Authorised domains" and then remove localhost
 - Then switch "Auth-Development" project
 
-# Step 3
+### Step 3
 - Go to project overviews
 - Click on button like this "</>" and register your app with name "auth-development"
 
-# Step 4 
+### Step 4 
 - Open your VS Code Editor create your react app
 - First create a file ".env.local" on your root directory
 - Write the following code in this file
-------------------------------------------------------------------------------------
-{
+```
 REACT_APP_FIREBASE_API_KEY = <YourFirebaseSnippet-ApiKey>
 REACT_APP_FIREBASE_AUTH_DOMAIN = <YourFirebaseSnippet-AuthDomain>
 REACT_APP_FIREBASE_DATABASE_URL = <YourFirebaseSnippet-DatabaseURL>
@@ -29,10 +28,9 @@ REACT_APP_FIREBASE_PROJECT_ID = <YourFirebaseSnippet-ProjectId>
 REACT_APP_FIREBASE_STORAGE_BUCKET = <YourFirebaseSnippet-StorageBucket>
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID = <YourFirebaseSnippet-MessagingSenderId>
 REACT_APP_FIREBASE_APP_ID = <YourFirebaseSnippet-AppId>
-}
-------------------------------------------------------------------------------------
+```
 
-# Step 5 
+### Step 5 
 - Create a file "firebase.js" in your src folder
 - Firslty run command on your terminal "npm i firebase"
 - Write the following code in this file
@@ -54,11 +52,11 @@ export const auth = app.auth();
 export default app;
 ------------------------------------------------------------------------------------
 
-# Step 6
+### Step 6
 - Create a contexts folder in your src folder
 - Create a file "AuthContext.js" in this folder
 
-# Step 7
+### Step 7
 - Create a components folder in your src folder
 - Move "App.js" file in components foder
 - Create "Signup.js" file in the same folder
